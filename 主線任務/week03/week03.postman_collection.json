@@ -1,0 +1,38 @@
+{
+	"id": "6d8a79b0-8883-105b-4ac1-07bcaa4e67e3",
+	"name": "第三週 從 express MVC 架構建立 RESTful API",
+	"description": "",
+	"order": [
+		"0a64c6d3-7918-8798-0138-cb9561eb3a7c"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1652499346903,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0a64c6d3-7918-8798-0138-cb9561eb3a7c",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:3000/api/post",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "6d8a79b0-8883-105b-4ac1-07bcaa4e67e3",
+			"data": null,
+			"dataMode": "params",
+			"name": "localhost:3000/api/post",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1652499357659,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
