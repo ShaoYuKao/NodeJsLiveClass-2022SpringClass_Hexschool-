@@ -14,7 +14,8 @@ const usersSchema = new mongoose.Schema(
       select: false
     },
     photo: String,
-  }
+  },
+  { versionKey: false }
 );
 
 const users = mongoose.model(

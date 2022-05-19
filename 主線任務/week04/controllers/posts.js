@@ -34,6 +34,43 @@ const posts = {
     } catch (err){
       handleError(res, err);
     }
+  },
+  async deleteAllPosts(req, res) {
+    const result = await Posts.deleteMany({});
+    handleSuccess(res, result);
+    res.end();
+  },
+  async deletePost(req, res) {
+    try {
+      const id = req.url.split('/').pop();
+      const result = await Posts.findByIdAndDelete(id);
+
+      if(result) {
+        handleSuccess(res);
+      } else {
+        handleError(res);
+      }
+    } catch (err) {
+      handleError(res, err);
+    }    
+  },
+  async patchPosts(req, res) {
+    try {
+      const { body } = req;
+
+      const id = req.url.split('/').pop();
+
+      const result = await Posts.findByIdAndUpdate(id, body, { runValidators: true });
+
+      if(result) {
+        handleSuccess(res, result);
+      } else {
+        handleError(res);
+      }
+    } catch (err) {
+      console.log("=== err ===", err);
+      handleError(res, err);
+    }
   }
 }
 
