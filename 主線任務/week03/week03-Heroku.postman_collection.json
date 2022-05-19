@@ -1,145 +1,84 @@
 {
-	"id": "20f64510-a82e-11e5-b091-7a7d1d44925d",
-	"name": "week03-Heroku",
-	"description": "",
-	"order": [
-		"1a165e17-fb3f-a3a1-9e8f-c2a554c10f93",
-		"f7f42638-3b33-6ddf-e621-d1ddcda6460a",
-		"36965a89-8ae1-5169-e401-d02d0a1d40d8",
-		"7b844421-3043-8483-80a9-5f5f18aa5f54",
-		"21b394dc-4cb8-68ec-3f6c-1acb2a97b00b"
-	],
-	"folders": [],
-	"folders_order": [],
-	"timestamp": 1652796140239,
-	"owner": 0,
-	"public": false,
-	"requests": [
+	"variables": [],
+	"info": {
+		"name": "week03-Heroku",
+		"_postman_id": "20f64510-a82e-11e5-b091-7a7d1d44925d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
 		{
-			"id": "1a165e17-fb3f-a3a1-9e8f-c2a554c10f93",
-			"headers": "",
-			"headerData": [],
-			"url": "https://intense-mesa-65637.herokuapp.com/api/posts",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "GET",
-			"data": null,
-			"dataMode": "params",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1652799137774,
 			"name": "取得所有 posts",
-			"description": "",
-			"collectionId": "20f64510-a82e-11e5-b091-7a7d1d44925d",
-			"responses": []
+			"request": {
+				"url": "https://intense-mesa-65637.herokuapp.com/api/posts",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
 		},
 		{
-			"id": "21b394dc-4cb8-68ec-3f6c-1acb2a97b00b",
-			"headers": "",
-			"headerData": [],
-			"url": "https://intense-mesa-65637.herokuapp.com/api/posts",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "DELETE",
-			"data": null,
-			"dataMode": "params",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1652799209134,
-			"name": "刪除所有 posts",
-			"description": "",
-			"collectionId": "20f64510-a82e-11e5-b091-7a7d1d44925d",
-			"responses": []
-		},
-		{
-			"id": "36965a89-8ae1-5169-e401-d02d0a1d40d8",
-			"headers": "Content-Type: application/json\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "https://intense-mesa-65637.herokuapp.com/api/posts/6283b6ab64bc7e281fd750a1",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "PATCH",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1652799176468,
-			"name": "編輯單筆 post",
-			"description": "",
-			"collectionId": "20f64510-a82e-11e5-b091-7a7d1d44925d",
-			"responses": [],
-			"rawModeData": "{\r\n   \"content\":\"test2\"\r\n}"
-		},
-		{
-			"id": "7b844421-3043-8483-80a9-5f5f18aa5f54",
-			"headers": "",
-			"headerData": [],
-			"url": "https://intense-mesa-65637.herokuapp.com/api/posts/6283b6ab64bc7e281fd750a1",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "DELETE",
-			"data": null,
-			"dataMode": "params",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1652799200515,
-			"name": "刪除單筆 post",
-			"description": "",
-			"collectionId": "20f64510-a82e-11e5-b091-7a7d1d44925d",
-			"responses": []
-		},
-		{
-			"id": "f7f42638-3b33-6ddf-e621-d1ddcda6460a",
-			"headers": "Content-Type: application/json\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "https://intense-mesa-65637.herokuapp.com/api/posts",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1652799150461,
 			"name": "新增單筆 post",
-			"description": "",
-			"collectionId": "20f64510-a82e-11e5-b091-7a7d1d44925d",
-			"responses": [],
-			"rawModeData": "{\r\n   \"name\":\"test1\",\r\n   \"content\":\"test1\",\r\n   \"tags\":[\r\n      \"感情\"\r\n   ],\r\n   \"type\":\"person\"\r\n}"
+			"request": {
+				"url": "https://intense-mesa-65637.herokuapp.com/api/posts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\":\"test1\",\r\n   \"content\":\"test1\",\r\n   \"tags\":[\r\n      \"感情\"\r\n   ],\r\n   \"type\":\"person\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆 post",
+			"request": {
+				"url": "https://intense-mesa-65637.herokuapp.com/api/posts/6283b6ab64bc7e281fd750a1",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"content\":\"test2\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆 post",
+			"request": {
+				"url": "https://intense-mesa-65637.herokuapp.com/api/posts/6283b6ab64bc7e281fd750a1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有 posts",
+			"request": {
+				"url": "https://intense-mesa-65637.herokuapp.com/api/posts",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }

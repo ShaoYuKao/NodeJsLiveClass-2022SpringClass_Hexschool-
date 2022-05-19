@@ -55,7 +55,7 @@ const posts = {
       const result = await Posts.findByIdAndUpdate(id, body, { runValidators: true });
 
       if(result) {
-        handleSuccess(res);
+        handleSuccess(res, result);
       } else {
         handleError(res);
       }
