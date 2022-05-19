@@ -10,4 +10,10 @@ router.get('/', isAuth, handleErrorAsync((req, res, next) => PostsControllers.ge
 // 張貼個人動態
 router.post('/', isAuth, handleErrorAsync((req, res, next) => PostsControllers.createPosts(req, res, next)));
 
+router.delete('/', handleErrorAsync((req, res, next) => PostsControllers.deleteAllPosts(req, res, next)));
+
+router.delete('/:id', handleErrorAsync((req, res, next) => PostsControllers.PostsControllers.deletePost(req, res, next)));
+
+router.patch('/:id', handleErrorAsync((req, res, next) => PostsControllers.PostsControllers.PostsControllers.patchPosts(req, res, next)));
+
 module.exports = router;

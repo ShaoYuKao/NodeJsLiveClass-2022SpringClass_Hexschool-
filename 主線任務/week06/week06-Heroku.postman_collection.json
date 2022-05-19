@@ -1,268 +1,176 @@
 {
-	"id": "a3a5e8af-a057-70b4-6ebf-119e94141e51",
-	"name": "week06-Heroku",
-	"description": "",
-	"order": [
-		"ae011823-f15b-7186-7b54-ad322de21b40",
-		"e164ed32-b449-2d8f-019f-558005cbced8",
-		"b5e21951-7cc6-91f0-0d68-2a0f5567be8e",
-		"9ed78049-665a-3f68-5f86-24202589899b",
-		"db73c2f9-d5ba-5e1e-5632-8fd36e03de3d",
-		"c41935d2-1352-b679-6695-855bca260ebb",
-		"44554a10-8c81-fff2-af4b-8f05ecdbe02f"
-	],
-	"folders": [],
-	"folders_order": [],
-	"timestamp": 1652590135058,
-	"owner": 0,
-	"public": false,
-	"requests": [
+	"variables": [],
+	"info": {
+		"name": "week06-Heroku",
+		"_postman_id": "a3a5e8af-a057-70b4-6ebf-119e94141e51",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
 		{
-			"id": "44554a10-8c81-fff2-af4b-8f05ecdbe02f",
-			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODBjMjc2YWFhMGU1MjBjNDU1MDY1ZSIsImlhdCI6MTY1MjYwNTU1OCwiZXhwIjoxNjUzMjEwMzU4fQ.HgUF7XkOLLWyGLDrfCNdWvCt8pM3z-JcZs5qNDC0Mpo\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODBjMjc2YWFhMGU1MjBjNDU1MDY1ZSIsImlhdCI6MTY1MjYwNTU1OCwiZXhwIjoxNjUzMjEwMzU4fQ.HgUF7XkOLLWyGLDrfCNdWvCt8pM3z-JcZs5qNDC0Mpo",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "https://stormy-plateau-63464.herokuapp.com/api/posts",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "POST",
-			"collectionId": "a3a5e8af-a057-70b4-6ebf-119e94141e51",
-			"data": [],
-			"dataMode": "raw",
-			"name": "張貼個人動態",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1652606654732,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\r\n\t\"content\": \"測試關聯資料7\",\r\n\t\"likes\": 10\r\n}"
-		},
-		{
-			"id": "9ed78049-665a-3f68-5f86-24202589899b",
-			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODBjMjc2YWFhMGU1MjBjNDU1MDY1ZSIsImlhdCI6MTY1MjYwNTc2NiwiZXhwIjoxNjUzMjEwNTY2fQ.tvY4xKYNrQ_F6LFbLHDGFq9BgJG5PriHDannAblltu4\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODBjMjc2YWFhMGU1MjBjNDU1MDY1ZSIsImlhdCI6MTY1MjYwNTc2NiwiZXhwIjoxNjUzMjEwNTY2fQ.tvY4xKYNrQ_F6LFbLHDGFq9BgJG5PriHDannAblltu4",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "https://stormy-plateau-63464.herokuapp.com/api/users/profile",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "a3a5e8af-a057-70b4-6ebf-119e94141e51",
-			"data": [],
-			"dataMode": "raw",
-			"name": "取得個人資料",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1652606100206,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n\t\"confirmPassword\": \"nba456789\",\n\t\"password\": \"nba456789\"\n}"
-		},
-		{
-			"id": "ae011823-f15b-7186-7b54-ad322de21b40",
-			"headers": "Content-Type: application/json\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "https://stormy-plateau-63464.herokuapp.com/api/users/sign_up",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "POST",
-			"collectionId": "a3a5e8af-a057-70b4-6ebf-119e94141e51",
-			"data": [],
-			"dataMode": "raw",
 			"name": "註冊",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1652605594555,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n\t\"name\": \"snppoy\",\n\t\"email\": \"snoopy@gmail.com\",\n\t\"confirmPassword\": \"nba45678\",\n\t\"password\": \"nba45678\"\n}"
-		},
-		{
-			"id": "b5e21951-7cc6-91f0-0d68-2a0f5567be8e",
-			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODBjMjc2YWFhMGU1MjBjNDU1MDY1ZSIsImlhdCI6MTY1MjYwNTc2NiwiZXhwIjoxNjUzMjEwNTY2fQ.tvY4xKYNrQ_F6LFbLHDGFq9BgJG5PriHDannAblltu4\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
+			"request": {
+				"url": "https://stormy-plateau-63464.herokuapp.com/api/users/sign_up",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"snppoy\",\n\t\"email\": \"snoopy@gmail.com\",\n\t\"confirmPassword\": \"nba45678\",\n\t\"password\": \"nba45678\"\n}"
 				},
-				{
-					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODBjMjc2YWFhMGU1MjBjNDU1MDY1ZSIsImlhdCI6MTY1MjYwNTc2NiwiZXhwIjoxNjUzMjEwNTY2fQ.tvY4xKYNrQ_F6LFbLHDGFq9BgJG5PriHDannAblltu4",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "https://stormy-plateau-63464.herokuapp.com/api/users/updatePassword",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "POST",
-			"collectionId": "a3a5e8af-a057-70b4-6ebf-119e94141e51",
-			"data": [],
-			"dataMode": "raw",
-			"name": "重設密碼",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1652606013272,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n\t\"confirmPassword\": \"nba456789\",\n\t\"password\": \"nba456789\"\n}"
+				"description": ""
+			},
+			"response": []
 		},
 		{
-			"id": "c41935d2-1352-b679-6695-855bca260ebb",
-			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODBjMjc2YWFhMGU1MjBjNDU1MDY1ZSIsImlhdCI6MTY1MjYwNTU1OCwiZXhwIjoxNjUzMjEwMzU4fQ.HgUF7XkOLLWyGLDrfCNdWvCt8pM3z-JcZs5qNDC0Mpo\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODBjMjc2YWFhMGU1MjBjNDU1MDY1ZSIsImlhdCI6MTY1MjYwNTU1OCwiZXhwIjoxNjUzMjEwMzU4fQ.HgUF7XkOLLWyGLDrfCNdWvCt8pM3z-JcZs5qNDC0Mpo",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "https://stormy-plateau-63464.herokuapp.com/api/posts",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "a3a5e8af-a057-70b4-6ebf-119e94141e51",
-			"data": [],
-			"dataMode": "raw",
-			"name": "觀看所有動態",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1652606404722,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\r\n\t\"email\": \"snoopy@gmail.com\",\r\n    \"photo\": \"https://i.picsum.photos/id/533/200/300.jpg?hmac=eehg5zb3wyJViBC8IiDL85fqqk9z85uHtRciYvDovgA\",\r\n    \"sex\": \"male\",\r\n    \"nickname\": \"kitty\"\r\n}"
-		},
-		{
-			"id": "db73c2f9-d5ba-5e1e-5632-8fd36e03de3d",
-			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODBjMjc2YWFhMGU1MjBjNDU1MDY1ZSIsImlhdCI6MTY1MjYwNTU1OCwiZXhwIjoxNjUzMjEwMzU4fQ.HgUF7XkOLLWyGLDrfCNdWvCt8pM3z-JcZs5qNDC0Mpo\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODBjMjc2YWFhMGU1MjBjNDU1MDY1ZSIsImlhdCI6MTY1MjYwNTU1OCwiZXhwIjoxNjUzMjEwMzU4fQ.HgUF7XkOLLWyGLDrfCNdWvCt8pM3z-JcZs5qNDC0Mpo",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "https://stormy-plateau-63464.herokuapp.com/api/users/profile",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "PATCH",
-			"collectionId": "a3a5e8af-a057-70b4-6ebf-119e94141e51",
-			"data": [],
-			"dataMode": "raw",
-			"name": "更新個人資料",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1652606179476,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\r\n\t\"email\": \"snoopy@gmail.com\",\r\n    \"photo\": \"https://i.picsum.photos/id/533/200/300.jpg?hmac=eehg5zb3wyJViBC8IiDL85fqqk9z85uHtRciYvDovgA\",\r\n    \"sex\": \"male\",\r\n    \"nickname\": \"kitty\"\r\n}"
-		},
-		{
-			"id": "e164ed32-b449-2d8f-019f-558005cbced8",
-			"headers": "Content-Type: application/json\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "https://stormy-plateau-63464.herokuapp.com/api/users/sign_in",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "POST",
-			"collectionId": "a3a5e8af-a057-70b4-6ebf-119e94141e51",
-			"data": [],
-			"dataMode": "raw",
 			"name": "登入",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1652605795262,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n\t\"email\": \"snoopy@gmail.com\",\n\t\"password\": \"nba456789\"\n}"
+			"request": {
+				"url": "https://stormy-plateau-63464.herokuapp.com/api/users/sign_in",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"snoopy@gmail.com\",\n\t\"password\": \"nba456789\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "重設密碼",
+			"request": {
+				"url": "https://stormy-plateau-63464.herokuapp.com/api/users/updatePassword",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODBjMjc2YWFhMGU1MjBjNDU1MDY1ZSIsImlhdCI6MTY1MjYwNTc2NiwiZXhwIjoxNjUzMjEwNTY2fQ.tvY4xKYNrQ_F6LFbLHDGFq9BgJG5PriHDannAblltu4",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"confirmPassword\": \"nba456789\",\n\t\"password\": \"nba456789\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "取得個人資料",
+			"request": {
+				"url": "https://stormy-plateau-63464.herokuapp.com/api/users/profile",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODBjMjc2YWFhMGU1MjBjNDU1MDY1ZSIsImlhdCI6MTY1MjYwNTc2NiwiZXhwIjoxNjUzMjEwNTY2fQ.tvY4xKYNrQ_F6LFbLHDGFq9BgJG5PriHDannAblltu4",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"confirmPassword\": \"nba456789\",\n\t\"password\": \"nba456789\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "更新個人資料",
+			"request": {
+				"url": "https://stormy-plateau-63464.herokuapp.com/api/users/profile",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODBjMjc2YWFhMGU1MjBjNDU1MDY1ZSIsImlhdCI6MTY1MjYwNTU1OCwiZXhwIjoxNjUzMjEwMzU4fQ.HgUF7XkOLLWyGLDrfCNdWvCt8pM3z-JcZs5qNDC0Mpo",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"email\": \"snoopy@gmail.com\",\r\n    \"photo\": \"https://i.picsum.photos/id/533/200/300.jpg?hmac=eehg5zb3wyJViBC8IiDL85fqqk9z85uHtRciYvDovgA\",\r\n    \"sex\": \"male\",\r\n    \"nickname\": \"kitty\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "觀看所有動態",
+			"request": {
+				"url": "https://stormy-plateau-63464.herokuapp.com/api/posts",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODBjMjc2YWFhMGU1MjBjNDU1MDY1ZSIsImlhdCI6MTY1MjYwNTU1OCwiZXhwIjoxNjUzMjEwMzU4fQ.HgUF7XkOLLWyGLDrfCNdWvCt8pM3z-JcZs5qNDC0Mpo",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"email\": \"snoopy@gmail.com\",\r\n    \"photo\": \"https://i.picsum.photos/id/533/200/300.jpg?hmac=eehg5zb3wyJViBC8IiDL85fqqk9z85uHtRciYvDovgA\",\r\n    \"sex\": \"male\",\r\n    \"nickname\": \"kitty\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "張貼個人動態",
+			"request": {
+				"url": "https://stormy-plateau-63464.herokuapp.com/api/posts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODBjMjc2YWFhMGU1MjBjNDU1MDY1ZSIsImlhdCI6MTY1MjYwNTU1OCwiZXhwIjoxNjUzMjEwMzU4fQ.HgUF7XkOLLWyGLDrfCNdWvCt8pM3z-JcZs5qNDC0Mpo",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"content\": \"測試關聯資料7\",\r\n\t\"likes\": 10\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
