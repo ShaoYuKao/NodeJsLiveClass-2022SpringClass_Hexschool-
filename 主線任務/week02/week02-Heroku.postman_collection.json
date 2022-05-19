@@ -1,145 +1,84 @@
 {
-	"id": "f0b6b219-5225-405a-fd7b-0256615cb02b",
-	"name": "week02-Heroku",
-	"description": "",
-	"order": [
-		"190a85f5-a544-0a4e-57fe-01d693985bc5",
-		"80d91741-cfa9-55f8-ffff-16afccfeff07",
-		"6bb076ea-d7a9-5282-912c-37c04fc7d8b8",
-		"d9969c5f-bdcc-67d1-109b-df641b1304d1",
-		"2199583a-a5e5-8484-00ad-4bbcdd339ff3"
-	],
-	"folders": [],
-	"folders_order": [],
-	"timestamp": 1652792048314,
-	"owner": 0,
-	"public": false,
-	"requests": [
+	"variables": [],
+	"info": {
+		"name": "week02-Heroku",
+		"_postman_id": "f0b6b219-5225-405a-fd7b-0256615cb02b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
 		{
-			"id": "190a85f5-a544-0a4e-57fe-01d693985bc5",
-			"headers": "",
-			"headerData": [],
-			"url": "https://secret-everglades-40842.herokuapp.com/posts",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "GET",
-			"data": null,
-			"dataMode": "params",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1652795084122,
 			"name": "取得所有 posts",
-			"description": "",
-			"collectionId": "f0b6b219-5225-405a-fd7b-0256615cb02b",
-			"responses": []
+			"request": {
+				"url": "https://secret-everglades-40842.herokuapp.com/posts",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
 		},
 		{
-			"id": "2199583a-a5e5-8484-00ad-4bbcdd339ff3",
-			"headers": "",
-			"headerData": [],
-			"url": "https://secret-everglades-40842.herokuapp.com/posts",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "DELETE",
-			"data": null,
-			"dataMode": "params",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1652795119805,
-			"name": "刪除所有 posts",
-			"description": "",
-			"collectionId": "f0b6b219-5225-405a-fd7b-0256615cb02b",
-			"responses": []
-		},
-		{
-			"id": "6bb076ea-d7a9-5282-912c-37c04fc7d8b8",
-			"headers": "Content-Type: application/json\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "https://secret-everglades-40842.herokuapp.com/posts/62839bec8eb39d442882e8e1",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "PATCH",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1652795104030,
-			"name": "編輯單筆 post",
-			"description": "",
-			"collectionId": "f0b6b219-5225-405a-fd7b-0256615cb02b",
-			"responses": [],
-			"rawModeData": "{\r\n   \"content\":\"test2\"\r\n}"
-		},
-		{
-			"id": "80d91741-cfa9-55f8-ffff-16afccfeff07",
-			"headers": "Content-Type: application/json\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "https://secret-everglades-40842.herokuapp.com/posts",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1652795095923,
 			"name": "新增單筆 post",
-			"description": "",
-			"collectionId": "f0b6b219-5225-405a-fd7b-0256615cb02b",
-			"responses": [],
-			"rawModeData": "{\r\n   \"name\":\"test1\",\r\n   \"content\":\"test1\",\r\n   \"tags\":[\r\n      \"感情\"\r\n   ],\r\n   \"type\":\"person\"\r\n}"
+			"request": {
+				"url": "https://secret-everglades-40842.herokuapp.com/posts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\":\"test1\",\r\n   \"content\":\"test1\",\r\n   \"tags\":[\r\n      \"感情\"\r\n   ],\r\n   \"type\":\"person\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
 		},
 		{
-			"id": "d9969c5f-bdcc-67d1-109b-df641b1304d1",
-			"headers": "",
-			"headerData": [],
-			"url": "https://secret-everglades-40842.herokuapp.com/posts/62839bec8eb39d442882e8e1",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "DELETE",
-			"data": null,
-			"dataMode": "params",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1652795110968,
+			"name": "編輯單筆 post",
+			"request": {
+				"url": "https://secret-everglades-40842.herokuapp.com/posts/62839bec8eb39d442882e8e1",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"content\":\"test2\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
 			"name": "刪除單筆 post",
-			"description": "",
-			"collectionId": "f0b6b219-5225-405a-fd7b-0256615cb02b",
-			"responses": []
+			"request": {
+				"url": "https://secret-everglades-40842.herokuapp.com/posts/62839bec8eb39d442882e8e1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有 posts",
+			"request": {
+				"url": "https://secret-everglades-40842.herokuapp.com/posts",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }

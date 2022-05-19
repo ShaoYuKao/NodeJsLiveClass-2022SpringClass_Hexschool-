@@ -50,17 +50,14 @@ const posts = {
       const id = req.url.split('/').pop();
       const data = JSON.parse(body);
 
-      console.log(`id: ${id}; data: ${data}`);
-
       const result = await Posts.findByIdAndUpdate(id, data, { runValidators: true });
 
       if(result) {
-        handleSuccess(res);
+        handleSuccess(res, result);
       } else {
         handleError(res);
       }
     } catch (err) {
-      console.log("=== err ===", err);
       handleError(res, err);
     }
   }
