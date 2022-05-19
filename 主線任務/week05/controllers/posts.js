@@ -33,6 +33,42 @@ const posts = {
     } catch (err){
       appError(400, err.message, next);
     }
+  },
+  async deleteAllPosts(req, res, next) {
+    const result = await Posts.deleteMany({});
+    handleSuccess(res, result);
+    res.end();
+  },
+  async deletePost(req, res, next) {
+    try {
+      const id = req.url.split('/').pop();
+      const result = await Posts.findByIdAndDelete(id);
+
+      if(result) {
+        handleSuccess(res);
+      } else {
+        appError(400, "單筆資料刪除失敗", next);
+      }
+    } catch (err) {
+      appError(400, err.message, next);
+    }    
+  },
+  async patchPosts(req, res, next) {
+    try {
+      const { body } = req;
+
+      const id = req.url.split('/').pop();
+
+      const result = await Posts.findByIdAndUpdate(id, body, { runValidators: true });
+
+      if(result) {
+        handleSuccess(res, result);
+      } else {
+        appError(400, "資料更新失敗", next);
+      }
+    } catch (err) {
+      appError(400, err.message, next);
+    }
   }
 }
 

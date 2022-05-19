@@ -1,77 +1,51 @@
 {
-	"id": "af7426fe-c57a-7453-c490-0f053c8a60d8",
-	"name": "week05-Heroku",
-	"description": "",
-	"order": [
-		"05aeb5ae-c647-9c7e-58bf-20089584136d",
-		"b6b8dbd4-7111-904b-8c4c-3d0119fee3b1"
-	],
-	"folders": [],
-	"folders_order": [],
-	"timestamp": 1652542856525,
-	"owner": 0,
-	"public": false,
-	"requests": [
+	"variables": [],
+	"info": {
+		"name": "week05-Heroku",
+		"_postman_id": "af7426fe-c57a-7453-c490-0f053c8a60d8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
 		{
-			"id": "05aeb5ae-c647-9c7e-58bf-20089584136d",
-			"headers": "Content-Type: application/json\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "https://fathomless-hamlet-54876.herokuapp.com/api/posts",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1652543578040,
 			"name": "https://fathomless-hamlet-54876.herokuapp.com/api/posts",
-			"description": "",
-			"collectionId": "af7426fe-c57a-7453-c490-0f053c8a60d8",
-			"responses": [],
-			"rawModeData": "{\n\t\"user\": \"627f3926dc18047d5a82d83c\",\n\t\"content\": \"測試關聯資料4\"\n}"
+			"request": {
+				"url": "https://fathomless-hamlet-54876.herokuapp.com/api/posts",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\": \"627f3926dc18047d5a82d83c\",\n\t\"content\": \"測試關聯資料4\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
 		},
 		{
-			"id": "b6b8dbd4-7111-904b-8c4c-3d0119fee3b1",
-			"headers": "Content-Type: application/json\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "https://fathomless-hamlet-54876.herokuapp.com/api/posts",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "POST",
-			"collectionId": "af7426fe-c57a-7453-c490-0f053c8a60d8",
-			"data": [],
-			"dataMode": "raw",
 			"name": "https://fathomless-hamlet-54876.herokuapp.com/api/posts",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1652543638676,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n\t\"user\": \"627f3926dc18047d5a82d83c\",\n\t\"content\": \"測試關聯資料6\"\n}"
+			"request": {
+				"url": "https://fathomless-hamlet-54876.herokuapp.com/api/posts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\": \"627f3926dc18047d5a82d83c\",\n\t\"content\": \"測試關聯資料6\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
