@@ -1,78 +1,124 @@
 {
-	"id": "9180d3a7-1261-e527-dcb0-f31c2bd95ae3",
-	"name": "week04-Heroku",
-	"description": "",
-	"order": [
-		"c21da56d-117a-be62-fdcd-ba0f74c1b047",
-		"f977b269-2fff-00a0-f11b-703d50dd3fb7"
-	],
-	"folders": [],
-	"folders_order": [],
-	"timestamp": 1652513939082,
-	"owner": 0,
-	"public": false,
-	"requests": [
+	"variables": [],
+	"info": {
+		"name": "week04-Heroku",
+		"_postman_id": "9180d3a7-1261-e527-dcb0-f31c2bd95ae3",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
 		{
-			"id": "c21da56d-117a-be62-fdcd-ba0f74c1b047",
-			"headers": "Content-Type: application/json\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "https://guarded-reef-34372.herokuapp.com/api/posts",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "POST",
-			"collectionId": "9180d3a7-1261-e527-dcb0-f31c2bd95ae3",
-			"data": [],
-			"dataMode": "raw",
-			"name": "https://guarded-reef-34372.herokuapp.com/api/posts",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1652513949675,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n\t\"user\": \"627f3926dc18047d5a82d83c\",\n\t\"content\": \"測試關聯資料1\"\n}"
+			"name": "新增一筆貼文",
+			"request": {
+				"url": "https://guarded-reef-34372.herokuapp.com/api/posts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\":\"6280c276aaa0e520c455065e\",\r\n    \"content\":\"我要增加內容333\",\r\n    \"image\":\"https://cdn.shopify.com/s/files/1/0740/2335/collections/snoopy-logo.png?v=1628765375\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
 		},
 		{
-			"id": "f977b269-2fff-00a0-f11b-703d50dd3fb7",
-			"headers": "Content-Type: application/json\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "https://guarded-reef-34372.herokuapp.com/api/posts",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "9180d3a7-1261-e527-dcb0-f31c2bd95ae3",
-			"data": [],
-			"dataMode": "raw",
-			"name": "https://guarded-reef-34372.herokuapp.com/api/posts",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1652513980438,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n\t\"user\": \"627f3926dc18047d5a82d83c\",\n\t\"content\": \"測試關聯資料3\"\n}"
+			"name": "取得所有貼文",
+			"request": {
+				"url": "https://guarded-reef-34372.herokuapp.com/api/posts",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "刪除一筆貼文",
+			"request": {
+				"url": {
+					"raw": "https://guarded-reef-34372.herokuapp.com/api/posts/:id",
+					"protocol": "https",
+					"host": [
+						"guarded-reef-34372",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts",
+						":id"
+					],
+					"query": [],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "修改一筆貼文",
+			"request": {
+				"url": {
+					"raw": "https://guarded-reef-34372.herokuapp.com/api/posts/:id",
+					"protocol": "https",
+					"host": [
+						"guarded-reef-34372",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts",
+						":id"
+					],
+					"query": [],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\":\"我想改內容~~~123\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有貼文",
+			"request": {
+				"url": "https://guarded-reef-34372.herokuapp.com/api/posts",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
